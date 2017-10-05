@@ -10,7 +10,7 @@ public class EchoClientTester {
     EchoClient client = new EchoClient();
     
     client.addObserver((msg) -> {
-      System.out.println("Received a message: "+msg);
+      System.out.println("Received a message from server UPPERCASE: "+msg);
     });
     client.connect("localhost",1234);
     
